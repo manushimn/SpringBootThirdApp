@@ -56,5 +56,24 @@ values (4003, 3, 'Good', 3001);
 INSERT INTO review(id, rating, description, course_id)
 values (4004, 5, 'Excellent', 3002);
 
+
 INSERT INTO review(id, rating, description, course_id)
 values (4005, 1, 'Bad', 3003);
+
+
+
+
+INSERT INTO student_courses(students_id, courses_id)
+values (1001, 3001);
+
+INSERT INTO student_courses(students_id, courses_id)
+values (1001, 3002);
+
+INSERT INTO student_courses(students_id, courses_id)
+values (1001, 3003);
+
+INSERT INTO student_courses(students_id, courses_id)
+values (1002, 3001);
+
+INSERT INTO student_courses(students_id, courses_id)
+values (1003, 3002);

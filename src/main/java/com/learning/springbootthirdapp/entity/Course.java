@@ -1,9 +1,6 @@
 package com.learning.springbootthirdapp.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,7 +16,8 @@ public class Course {
     @OneToMany(mappedBy = "course")
     private List<Review> reviews = new ArrayList<>();
 
-
+    @ManyToMany(mappedBy = "courses")
+    private List<Student> students = new ArrayList<>();
 
 
     public Course(String courseName) {
@@ -59,5 +57,17 @@ public class Course {
 
     public void removeReview(Review review) {
         reviews.remove(review);
+    }
+
+    public List<Student> getStudents() {
+        return students;
+    }
+
+    public void addStudent(Student student) {
+        students.add(student);
+    }
+
+    public void removeStudent(Student student) {
+        students.add(student);
     }
 }

@@ -23,6 +23,7 @@ public class SpringBootThirdAppApplication implements CommandLineRunner {
     @Override
     public void run(String... arg0) throws Exception{
         courseRepository.addReviewsForACourse();
+        courseRepository.addStudentsAndCourses();
     }
 }
 
