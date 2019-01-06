@@ -26,3 +26,35 @@ VALUES (1002, 'hasanka', 2002);
 
 INSERT INTO student(id, name, passport_id)
 VALUES (1003, 'anjy', 2003);
+
+
+
+
+
+INSERT INTO course(id, course_name)
+values (3001, 'maths');
+
+INSERT INTO course(id, course_name)
+values (3002, 'physics');
+
+INSERT INTO course(id, course_name)
+values (3003, 'chemistry');
+
+
+
+
+
+INSERT INTO review(id, rating, description, course_id)
+values (4001, 5, 'Excellent', 3001);
+
+INSERT INTO review(id, rating, description, course_id)
+values (4002, 4, 'Very Good', 3001);
+
+INSERT INTO review(id, rating, description, course_id)
+values (4003, 3, 'Good', 3001);
+
+INSERT INTO review(id, rating, description, course_id)
+values (4004, 5, 'Excellent', 3002);
+
+INSERT INTO review(id, rating, description, course_id)
+values (4005, 1, 'Bad', 3003);
